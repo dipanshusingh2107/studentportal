@@ -15,7 +15,7 @@ using namespace std;
 
 class library{
 protected:
-map<string,int>book_status; //checks number of books of one type present
+static map<string,int>book_status; //checks number of books of one type present
 vector<string>books;        //my books issued
 
 public:

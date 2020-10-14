@@ -3,6 +3,7 @@
 #define _admin_inc_h_  //have to write dont know why
 
 #include<iostream>
+#include<sqlite3.h>
 #include<map>
 #include<bits/stdc++.h>
 #include"hostel.h"
@@ -18,7 +19,8 @@ string rollno;
 map<string,float>marks;
 float cgpa;
 public: 
-void showmarks();
+void showrecord(string rollno);
+void input();  //takes the input
 };
 
 
