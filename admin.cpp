@@ -12,7 +12,7 @@
 static int callback(void *unused, int count, char **data, char **columns)
 {
     admin* ptr= (admin*)unused;
-    ptr->input(data[0],data[1],atof(data[2]));
+    ptr->input(data[0],data[1],atof(data[2]), data[3]);
 
     return 0;
 }
@@ -27,9 +27,10 @@ void admin::showrecord(string rollno)
 }
 
 
-void admin::input(string rollno , string name , float cgpa)
+void admin::input(string rollno , string name , float cgpa,string password)
 {
     this->rollno = rollno;
     this-> name= name;
     this-> cgpa =cgpa;
+    this->password = password;
 }

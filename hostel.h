@@ -13,14 +13,16 @@ using namespace std;
 
 
 
-class hostel{
-protected:
-float mess_fees;
+class hostel: public admin
+{
+public:  //will change
+static float mess_fees;
 int room_alloted;
 bool fees_paid;
 
 public:
 void showhosteldata();
+void input(float mess_fees,int room_alloted, bool fees_paid);
 
 };
 

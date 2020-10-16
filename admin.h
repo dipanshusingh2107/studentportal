@@ -16,11 +16,12 @@ class admin{
 public:  //will change to protected later
 string name;
 string rollno;
+string password;
 map<string,float>marks;
 float cgpa;
 public: 
 void showrecord(string rollno);
-void input(string rollno , string name , float cgpa);  //takes the input
+void input(string rollno , string name , float cgpa,string password);  //takes the input
 };
 
 
