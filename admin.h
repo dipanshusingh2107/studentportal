@@ -13,14 +13,14 @@
 using namespace std;
 
 class admin{
-protected:
+public:  //will change to protected later
 string name;
 string rollno;
 map<string,float>marks;
 float cgpa;
 public: 
 void showrecord(string rollno);
-void input();  //takes the input
+void input(string rollno , string name , float cgpa);  //takes the input
 };
 
 
