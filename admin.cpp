@@ -12,7 +12,7 @@
 static int callback(void *unused, int count, char **data, char **columns)
 {
     admin* ptr= (admin*)unused;
-    input(data[0],data[1],atof(data[2]));
+    ptr->input(data[0],data[1],atof(data[2]));
 
     return 0;
 }
