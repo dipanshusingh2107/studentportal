@@ -4,12 +4,8 @@
 
 #include<iostream>
 #include<sqlite3.h>
-#include<map>
 #include<bits/stdc++.h>
-#include"hostel.h"
-#include"job.h"
-#include"library.h"
-#include"student.h"
+#include<iostream>
 using namespace std;
 
 class admin{

@@ -3,23 +3,22 @@
 #define _job_inc_h_  //have to write dont know why
 
 #include<iostream>
-#include<map>
 #include<bits/stdc++.h>
 #include"admin.h"
-#include"hostel.h"
-#include"library.h"
-#include"student.h"
 using namespace std;
 
 
 
-class job{
-protected:
+class job: virtual public admin
+{
+public:  //will change to protected;
+string company_name;
 float ctc;
 string info;
 
 public:
 void showjobdata();
+void input(string company_name , float ctc, string info);
 };
 
 #endif

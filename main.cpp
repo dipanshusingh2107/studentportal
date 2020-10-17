@@ -1,5 +1,4 @@
 #include<iostream>
-#include<map>
 #include<bits/stdc++.h>
 #include"admin.h"
 #include"hostel.h"
@@ -11,6 +10,26 @@ using namespace std;
 
 int main()
 {
-    admin obj;
-    obj.showrecord("2K19/IT/130");
+    student s1;
+
+    while(1)
+    {
+        if(s1.login())
+        break;
+        else
+        {
+            cout<<"WANT TO EXIT PRESS 1"<<endl;
+            string option ;
+            cin>>option;
+            if(option=="1")
+            return 0;
+        }
+    }
+
+   s1.showhosteldata();
+   s1.showjobdata();
+
+    
+
+
 }

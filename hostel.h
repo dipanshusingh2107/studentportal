@@ -3,20 +3,15 @@
 #define _hostel_inc_h_  //
 
 #include<iostream>
-#include<map>
-#include<bits/stdc++.h>
 #include"admin.h"
-#include"job.h"
-#include"library.h"
-#include"student.h"
 using namespace std;
 
 
 
-class hostel: public admin
+class hostel: virtual public admin
 {
 public:  //will change
-static float mess_fees;
+float mess_fees;
 int room_alloted;
 bool fees_paid;
 
