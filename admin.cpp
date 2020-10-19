@@ -1,12 +1,12 @@
 #include"admin.h"
 
 
-/*
+    /*
      unused - 
      count - The number of columns in the result set
      data - The row's data
      columns - The column names
-*/
+    */
 static int callback(void *unused, int count, char **data, char **columns)
 {
     admin* ptr= (admin*)unused;

@@ -5,11 +5,12 @@
 #include<iostream>
 #include"hostel.h"
 #include"job.h"
+#include"library.h"
 
 using namespace std;
 
 
-class student:public hostel,public job
+class student:public hostel,public job,public library
 {
 public:
 bool login();
