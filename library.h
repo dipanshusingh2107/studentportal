@@ -16,7 +16,7 @@ int book_number;
 string book_name;
 vector<pair<string,int> >books;        //my books issued
 public:
-void search_book(string name);
+void search_book();
 void mybooks();
 };
 
