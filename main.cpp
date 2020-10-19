@@ -21,7 +21,6 @@ int main()
             cout<<"WANT TO EXIT PRESS 1"<<endl;
             string option ;
             cin>>option;
-            cin >> ws;
             if(option=="1")
             return 0;
         }
@@ -30,7 +29,7 @@ int main()
     cout<<"WELCOME BACK "<<s1.name<<endl;
     
     do{
-        char choice;
+        string choice;
         cout<<"Enter the option Number For details and Hit ENTER \n";
         cout<<"1. Hostel Details \n";
         cout<<"2. Job Opportunities\n";
@@ -39,7 +38,7 @@ int main()
         cout<<"5. To exit \n";
         cin>>choice;
        
-        switch(choice)
+        switch(choice[0])
         {
             case '1': s1.showhosteldata();break;
             case '2': s1.showjobdata();break;

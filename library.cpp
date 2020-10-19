@@ -39,7 +39,7 @@ void library::search_book()
     string sql = "select count(*) from books where book_name = '"+bname+"' and issuedto = 'NULL';" ;
     int count;
     sqlite3_exec(db, sql.c_str(), countcallback, &count, NULL);
-    cout<<"Number Of"<<bname<<" Availabe are: "<<count<<endl;
+    cout<<"Number Of "<<bname<<" Availabe are: "<<count<<endl;
 }
 
 void library::mybooks()
