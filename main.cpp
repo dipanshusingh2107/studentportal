@@ -30,7 +30,7 @@ int main()
     
     do{
         string choice;
-        cout<<"Enter the option Number For details and Hit ENTER \n";
+        cout<<"\nEnter the option Number For details and Hit ENTER \n";
         cout<<"1. Hostel Details \n";
         cout<<"2. Job Opportunities\n";
         cout<<"3. Issued Books\n";
